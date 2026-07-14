@@ -1,0 +1,61 @@
+{
+  "version": "c-2c7be6425cbb",
+  "generated_at": "2026-07-14T03:13:42Z",
+  "schema_version": 1,
+  "track": "toefl-120",
+  "profile": {
+    "target_score": 120,
+    "daily_study_minutes": 5,
+    "voca_review_rule": "hoedok-rounds",
+    "free_chapters": 3
+  },
+  "score_band_policy": {
+    "version": "3.0",
+    "rule": "four-tier",
+    "bands": [
+      {
+        "id": "score-000-060",
+        "label": "~60",
+        "min_score": 0,
+        "max_score": 60,
+        "order": 1
+      },
+      {
+        "id": "score-061-080",
+        "label": "61-80",
+        "min_score": 61,
+        "max_score": 80,
+        "order": 2
+      },
+      {
+        "id": "score-081-100",
+        "label": "81-100",
+        "min_score": 81,
+        "max_score": 100,
+        "order": 3
+      },
+      {
+        "id": "score-101-120",
+        "label": "101-120",
+        "min_score": 101,
+        "max_score": 120,
+        "order": 4
+      }
+    ]
+  },
+  "entries": [
+    {
+      "id": "voca-101-120-u001",
+      "type": "voca",
+      "level": 4,
+      "path": "content/voca/score-101-120/unit-001.md",
+      "checksum_sha256": "91522d7230b819325ae3e4099a01c06854b85fe5fa973554c7b0e55fa84604f4",
+      "updated_at": "2026-07-14T00:00:00Z",
+      "score_band_id": "score-101-120",
+      "score_min": 101,
+      "score_max": 120,
+      "unit_title": "Biology",
+      "sequence": 1
+    }
+  ]
+}
