@@ -41,7 +41,7 @@ PROFILE = {
     "voca_review_rule": "hoedok-rounds",
     # Chapters per band that stay free before the full-access purchase.
     # Remote-configurable: the app reads this from the manifest profile.
-    "free_chapters": 3,
+    "free_chapters": 10,   # one whole topic book free (앱 책장 1권)
 }
 
 

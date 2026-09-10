@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>T120 일이공, 주제별로 읽는 토플 학술 어휘</title>
+<meta name="description" content="T120(일이공)은 토플(TOEFL®) 시험 대비를 위한 주제별 학술 어휘 앱입니다. 만점 120, 한국어로 일이공(ㅇㅇㄱ). 생물학, 천문학, 인류학처럼 지문이 나오는 학문 주제 그대로 한 권씩 묶어서 회독합니다. 로그인 없이, 학습 기록은 iCloud로 안전하게. TOEFL은 ETS의 등록 상표이며 본 앱은 ETS와 무관합니다." />
+<meta property="og:title" content="T120 일이공, 주제별로 읽는 토플 학술 어휘" />
+<meta property="og:description" content="토플(TOEFL®) 시험 대비 학술 어휘 앱. 지문이 주제별로 나오니, 단어도 주제별로." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://jsonpassion.github.io/T120/" />
+<link rel="canonical" href="https://jsonpassion.github.io/T120/" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='4' y='4' width='56' height='56' rx='12' fill='%234DABF7' stroke='%231A1A1A' stroke-width='5'/%3E%3Ctext x='32' y='42' font-family='-apple-system,sans-serif' font-size='24' font-weight='900' text-anchor='middle' fill='%231A1A1A'%3E120%3C/text%3E%3C/svg%3E" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<script>document.documentElement.classList.add('js');</script>
+
+<!-- Soft drifting aurora + grain (atmosphere behind everything) -->
+<div class="aurora" aria-hidden="true">
+  <span class="blob b-blue"></span>
+  <span class="blob b-mint"></span>
+  <span class="blob b-lav"></span>
+  <span class="blob b-pink"></span>
+</div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ======================= NAV ======================= -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="#">
+      <span class="logo-block">120</span> T120 <span class="logo-kr">일이공</span>
+    </a>
+    <div class="nav-links">
+      <a href="#how">학습 방법</a>
+      <a href="#features">기능</a>
+      <a href="#topics">주제 책장</a>
+      <a href="#demo">미리 해보기</a>
+      <a href="#pricing">가격</a>
+      <a class="nb-btn nav-cta" href="#download">다운로드</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ======================= HERO ======================= -->
+<header class="hero wrap" id="download">
+  <div data-reveal="up">
+    <span class="nb-tag" style="background: var(--mint); margin-bottom: 18px;">TOEFL® 시험 대비, 주제별 학술 어휘</span>
+    <h1>지문이 주제별로 나오니,<br /><span class="hl">단어</span>도<br />주제별로.</h1>
+    <p class="sub">
+      생물학, 천문학, 인류학. 토플 지문이 나오는 그 학문 그대로 한 권씩 묶은
+      학술 어휘장. 모르는 단어는 <strong>외울 때까지</strong> 다시 꺼내 보여줍니다.
+      로그인 없이, 기록은 iCloud로 영원히.
+    </p>
+    <div class="kr-brand" aria-label="120을 향해 일이공">
+      <span class="kk" style="background: var(--mint);">ㅇ</span>
+      <span class="kk" style="background: var(--yellow);">ㅇ</span>
+      <span class="kk" style="background: var(--pink);">ㄱ</span>
+      <span class="kr-brand-label">120점을 향해, <strong>일이공!</strong></span>
+    </div>
+    <div class="hero-ctas">
+      <span class="store-badge soon" aria-label="App Store 출시 준비 중">
+        <svg width="22" height="26" viewBox="0 0 22 26" fill="currentColor" aria-hidden="true"><path d="M18.3 13.8c0-3 2.5-4.5 2.6-4.6-1.4-2.1-3.6-2.4-4.4-2.4-1.9-.2-3.7 1.1-4.6 1.1-1 0-2.4-1.1-4-1.1-2 0-3.9 1.2-5 3-2.1 3.7-.5 9.1 1.5 12.1 1 1.5 2.2 3.1 3.8 3 1.5-.1 2.1-1 4-1s2.4 1 4 .9c1.7 0 2.7-1.5 3.7-3 1.2-1.7 1.6-3.4 1.7-3.5-.1 0-3.2-1.2-3.3-4.5zM15.2 4.8c.8-1 1.4-2.4 1.2-3.8-1.2.1-2.7.8-3.5 1.8-.8.9-1.5 2.3-1.3 3.7 1.4.1 2.8-.7 3.6-1.7z"/></svg>
+        <span><small>곧 만나요</small><span class="big">App Store 준비 중</span></span>
+      </span>
+      <a class="nb-btn secondary" href="#topics">주제 책장 보기</a>
+    </div>
+  </div>
+
+  <!-- CSS-drawn app preview (출시 스크린샷 교체 전 임시 목업) -->
+  <div class="hero-visual" data-reveal="zoom">
+  <div class="glow" aria-hidden="true"></div>
+  <div class="phone" aria-hidden="true">
+    <div class="notch"></div>
+    <div class="mock-row score">
+      <div class="mock-ring"><span>94</span></div>
+      <div class="mock-bars">
+        마스터 <div class="mock-bar"><i style="width:64%; background: var(--mint);"></i></div>
+        회독 진도 <div class="mock-bar"><i style="width:72%; background: var(--lavender);"></i></div>
+      </div>
+    </div>
+    <div class="mock-row mock-cta">▶ 이어서 학습하기 <span>›</span></div>
+    <div class="mock-row" style="background: var(--pink);">⏱️ 3초 퀴즈로 모름 정리</div>
+    <div class="mock-row">
+      학습 진도 <span class="mock-chip" style="background: var(--lavender);">중상급</span>
+      <div class="mock-books" style="margin-top:8px;">
+        <div class="mock-book">생물학</div>
+        <div class="mock-book reading b2">천문학</div>
+        <div class="mock-book b3">물리학</div>
+        <div class="mock-book b4">인류학</div>
+      </div>
+    </div>
+    <div class="mock-row" style="background: var(--surface);">모름 단어 12개, 모아서 정리 <span class="mock-chip" style="background: var(--coral);">복습</span></div>
+  </div>
+  </div>
+</header>
+
+<!-- ======================= STATEMENT BAND 1 ======================= -->
+<section class="cinema" id="film" aria-label="주제별 학술 어휘">
+  <div class="cinema-art" aria-hidden="true"></div>
+  <div class="scrim"></div>
+  <div class="cinema-inner">
+    <div class="cinema-copy">
+      <span class="kicker">한 주제가 한 권</span>
+      <h2>지문은 주제로 나옵니다.<br /><span class="film-hl">단어도 주제로.</span></h2>
+      <p>생물학 지문에는 생물학 단어가 나옵니다. 한 학문의 어휘를 한 덩어리로 외우면, 시험장에서도 한 덩어리로 떠오릅니다.</p>
+      <div class="spines" aria-hidden="true">
+        <span class="spine" style="background: var(--mint);">생물학</span>
+        <span class="spine" style="background: var(--blue);">천문학</span>
+        <span class="spine" style="background: var(--lavender);">인류학</span>
+        <span class="spine" style="background: var(--pink);">문학</span>
+        <span class="spine" style="background: var(--yellow);">언어학</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= STORY: scroll-linked card fan ======================= -->
+<section class="fan" id="story">
+  <div class="fan-inner">
+    <div class="fan-copy">
+      <span class="nb-tag" style="background: var(--mint);">회독 (回讀), 돌려 읽기</span>
+      <h2>한 번 본 단어는 잊혀도,<br /><em>열 번 본 단어</em>는 남습니다</h2>
+      <p>모르는 단어를 덱 맨 위로 계속 끌어올립니다. 알 때까지, 몇 번이고.</p>
+    </div>
+    <div class="fan-stage">
+      <div class="fan-deck" id="fanDeck">
+        <article class="fan-card" style="--a:-26deg; --x:-340px; --y:34px;">
+          <div class="fc-strip" style="background: var(--mint);"></div>
+          <b>photosynthesis</b><span>광합성</span><i>/ˌfoʊtoʊˈsɪnθəsɪs/</i>
+          <span class="fc-badge" style="background: var(--mint);">생물학</span>
+        </article>
+        <article class="fan-card" style="--a:-15deg; --x:-196px; --y:8px;">
+          <div class="fc-strip" style="background: var(--blue);"></div>
+          <b>orbit</b><span>궤도, 궤도를 돌다</span><i>/ˈɔːrbɪt/</i>
+          <span class="fc-badge" style="background: var(--blue);">천문학</span>
+        </article>
+        <article class="fan-card" style="--a:-5deg; --x:-66px; --y:-6px;">
+          <div class="fc-strip" style="background: var(--lavender);"></div>
+          <b>momentum</b><span>운동량, 추진력</span><i>/moʊˈmentəm/</i>
+          <span class="fc-badge" style="background: var(--lavender);">물리학</span>
+        </article>
+        <article class="fan-card" style="--a:5deg; --x:66px; --y:-6px;">
+          <div class="fc-strip" style="background: var(--pink);"></div>
+          <b>kinship</b><span>친족 관계</span><i>/ˈkɪnʃɪp/</i>
+          <span class="fc-badge" style="background: var(--pink);">인류학</span>
+        </article>
+        <article class="fan-card" style="--a:15deg; --x:196px; --y:8px;">
+          <div class="fc-strip" style="background: var(--yellow);"></div>
+          <b>aesthetic</b><span>미적인</span><i>/esˈθetɪk/</i>
+          <span class="fc-badge" style="background: var(--yellow);">예술과 건축</span>
+        </article>
+        <article class="fan-card" style="--a:26deg; --x:340px; --y:34px;">
+          <div class="fc-strip" style="background: var(--coral);"></div>
+          <b>metaphor</b><span>은유</span><i>/ˈmetəfɔːr/</i>
+          <span class="fc-badge" style="background: var(--coral);">문학</span>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= HOW IT WORKS ======================= -->
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>이렇게 학습해요</h2>
+      <p>하루 5분. 네 단계면 충분합니다.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num" style="background: var(--blue);">1</div>
+        <h3>레벨을 찾으세요</h3>
+        <p>12문항 테스트가 딱 맞는 시작점을 추천합니다. 어려운 단어를 맞히면, 그만큼 높은 레벨로.</p>
+      </div>
+      <div class="step">
+        <div class="step-num" style="background: var(--lavender);">2</div>
+        <h3>주제를 꺼내 넘기세요</h3>
+        <p>오늘 읽을 학문 한 권을 책장에서 꺼냅니다. 알면 알아요, 모르면 모름. 발음도 예문도 카드 한 장에.</p>
+      </div>
+      <div class="step">
+        <div class="step-num" style="background: var(--coral);">3</div>
+        <h3>모르는 것만 다시</h3>
+        <p>모름 단어를 모아서 복습하고, 3초 퀴즈로 확인하세요. 외울 때까지 사라지지 않습니다.</p>
+      </div>
+      <div class="step">
+        <div class="step-num" style="background: var(--mint);">4</div>
+        <h3>회독을 쌓으세요</h3>
+        <p>연속 두 번 알면 마스터. 책장이 한 주제씩 채워집니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= FEATURES ======================= -->
+<section id="features" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>단어장 앱이 아니라, <u>학술 어휘 책장</u>입니다</h2>
+      <p>암기는 재능이 아니라 반복 설계와 묶음 설계의 문제라고 믿습니다.</p>
+    </div>
+    <div class="grid">
+      <div class="feature">
+        <div class="strip" style="background: var(--blue);"></div>
+        <div class="icon" style="background: var(--blue);">📚</div>
+        <h3>주제별 책장</h3>
+        <p>권 번호 대신 학문 이름. 생물학, 천문학, 인류학처럼 토플 지문이 나오는 주제 그대로가 한 권입니다. 한 권은 100단어, 10챕터.</p>
+      </div>
+      <div class="feature">
+        <div class="strip" style="background: var(--mint);"></div>
+        <div class="icon" style="background: var(--mint);">🔁</div>
+        <h3>회독 시스템</h3>
+        <p>한 권을 끝내면 2회독, 3회독. 전체 다시 또는 모름만 골라 도는 회독 루프. 연속 2회독 "알아요"면 마스터.</p>
+      </div>
+      <div class="feature">
+        <div class="strip" style="background: var(--coral);"></div>
+        <div class="icon" style="background: var(--coral);">🎯</div>
+        <h3>모름 단어 집요 반복</h3>
+        <p>모른다고 한 단어는 "알아요"를 받아낼 때까지 절대 사라지지 않습니다. 챕터 사이, 메인 화면 어디서든 모아서 정리.</p>
+      </div>
+      <div class="feature">
+        <div class="strip" style="background: var(--pink);"></div>
+        <div class="icon" style="background: var(--pink);">⏱️</div>
+        <h3>3초 룰 퀴즈</h3>
+        <p>3초 안에 뜻을 못 고르면 모르는 겁니다. 화면 테두리가 시계방향으로 사라지는 카운트다운과 함께 즉답 반사신경을 단련.</p>
+      </div>
+      <div class="feature">
+        <span class="new-flag">NEW</span>
+        <div class="strip" style="background: var(--yellow);"></div>
+        <div class="icon" style="background: var(--yellow);">🗓️</div>
+        <h3>오늘의 20문제</h3>
+        <p>하루 한 번, 지금까지 열어 둔 전 범위에서 무작위 20문제. 오래전에 외운 주제가 슬쩍 섞여 나와 잊을 틈을 주지 않습니다.</p>
+      </div>
+      <div class="feature">
+        <div class="strip" style="background: var(--lavender);"></div>
+        <div class="icon" style="background: var(--lavender);">🔊</div>
+        <h3>자동 학습 모드</h3>
+        <p>손대지 않아도 카드가 넘어갑니다. 영어를 읽고, 뒤집어 뜻을 읽고, 다시 영어로 두 번. 걸으면서 듣는 학술 어휘.</p>
+      </div>
+      <div class="feature">
+        <div class="strip" style="background: var(--blue);"></div>
+        <div class="icon" style="background: var(--blue);">🎓</div>
+        <h3>레벨 테스트</h3>
+        <p>12문항 난이도 가중 배점으로 내 수준을 판정. 어려운 단어를 맞히면 그만큼 높은 레벨을 추천합니다.</p>
+      </div>
+      <div class="feature">
+        <div class="strip" style="background: var(--lime);"></div>
+        <div class="icon" style="background: var(--lime);">🔤</div>
+        <h3>카드 한 장에 전부</h3>
+        <p>발음기호, 어원 힌트, 학술 예문과 번역, 그리고 원어민 TTS까지. 눈으로 한 번, 귀로 한 번 새깁니다.</p>
+      </div>
+      <div class="feature">
+        <div class="strip" style="background: var(--mint);"></div>
+        <div class="icon" style="background: var(--mint);">☁️</div>
+        <h3>로그인 없음, 기록은 영원히</h3>
+        <p>회원가입 없이 시작. 진도와 회독, 마스터 기록은 내 iCloud에 저장되어 앱을 지웠다 깔아도 그대로 복원됩니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= TOPIC SHELF ======================= -->
+<section id="topics">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>책장에 꽂힌 건 숫자가 아니라 학문입니다</h2>
+      <p>1권, 2권이 아니라 생물학, 천문학, 인류학. 오늘 읽고 싶은 주제를 꺼내 보세요.</p>
+    </div>
+    <div class="topics">
+      <div class="topic" style="border-left-color: var(--mint);">
+        <div class="t-icon" aria-hidden="true">🌿</div>
+        <h4>생물학</h4><small>Biology</small>
+        <span class="t-count">100단어</span>
+      </div>
+      <div class="topic" style="border-left-color: var(--blue);">
+        <div class="t-icon" aria-hidden="true">🌙</div>
+        <h4>천문학</h4><small>Astronomy</small>
+        <span class="t-count">100단어</span>
+      </div>
+      <div class="topic" style="border-left-color: var(--lavender);">
+        <div class="t-icon" aria-hidden="true">⚛️</div>
+        <h4>물리학</h4><small>Physics</small>
+        <span class="t-count">100단어</span>
+      </div>
+      <div class="topic" style="border-left-color: var(--pink);">
+        <div class="t-icon" aria-hidden="true">🌎</div>
+        <h4>인류학</h4><small>Anthropology</small>
+        <span class="t-count">100단어</span>
+      </div>
+      <div class="topic" style="border-left-color: var(--yellow);">
+        <div class="t-icon" aria-hidden="true">🎨</div>
+        <h4>예술과 건축</h4><small>Art and Architecture</small>
+        <span class="t-count">100단어</span>
+      </div>
+      <div class="topic" style="border-left-color: var(--coral);">
+        <div class="t-icon" aria-hidden="true">📖</div>
+        <h4>문학</h4><small>Literature</small>
+        <span class="t-count">100단어</span>
+      </div>
+      <div class="topic" style="border-left-color: var(--lime);">
+        <div class="t-icon" aria-hidden="true">🔤</div>
+        <h4>언어학</h4><small>Linguistics</small>
+        <span class="t-count">100단어</span>
+      </div>
+      <div class="topic" style="border-left-color: var(--blue);">
+        <div class="t-icon" aria-hidden="true">🏛️</div>
+        <h4>정치와 법</h4><small>Politics and Law</small>
+        <span class="t-count">100단어</span>
+      </div>
+      <div class="topic" style="border-left-color: var(--mint);">
+        <div class="t-icon" aria-hidden="true">🩺</div>
+        <h4>의학과 생리</h4><small>Medicine and Physiology</small>
+        <span class="t-count">100단어</span>
+      </div>
+      <div class="topic" style="border-left-color: var(--lavender);">
+        <div class="t-icon" aria-hidden="true">📊</div>
+        <h4>연구와 데이터</h4><small>Research and Data</small>
+        <span class="t-count">100단어</span>
+      </div>
+    </div>
+    <p class="topics-note">
+      토플 리딩과 리스닝은 학술 도메인별로 지문이 나옵니다. 그래서 <strong>한 권 = 한 주제 = 100단어 = 10챕터</strong>로 묶었습니다.
+      레벨이 올라가면 같은 주제도 더 깊은 어휘로 다시 채워집니다.
+    </p>
+  </div>
+</section>
+
+<!-- ======================= LEVELS ======================= -->
+<section id="levels" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>내 점수대에 맞는 주제부터</h2>
+      <p>레벨마다 고유의 색. 책 고르듯 자유롭게 바꿔가며 학습하세요.</p>
+    </div>
+    <div class="levels">
+      <div class="level">
+        <div class="chip" style="background: var(--mint);"></div>
+        <h4>입문</h4><small>0-60, 기초 학술 어휘와 캠퍼스 생활</small>
+      </div>
+      <div class="level">
+        <div class="chip" style="background: var(--blue);"></div>
+        <h4>중급</h4><small>61-80, 리딩과 리스닝 빈출 어휘</small>
+      </div>
+      <div class="level">
+        <div class="chip" style="background: var(--lavender);"></div>
+        <h4>중상급</h4><small>81-100, 분야별 핵심 학술 어휘</small>
+      </div>
+      <div class="level">
+        <div class="chip" style="background: var(--pink);"></div>
+        <h4>고급</h4><small>101-120, 만점 대비 최고난도 어휘</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= SCREENSHOTS ======================= -->
+<section id="screens">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>화면 미리보기</h2>
+      <p>네오브루탈리즘 디자인. 세 가지 핵심 화면이 실제 앱처럼 움직입니다.</p>
+    </div>
+    <div class="shots">
+      <div>
+        <div class="shot-frame">
+          <div class="shot-anim sa-dash" aria-label="대시보드 애니메이션 미리보기">
+            <div class="sa-top">
+              <span class="sa-pill" style="background: var(--blue);">중급</span>
+              <span class="sa-pill" style="background: var(--lavender);">천문학 2회독</span>
+            </div>
+            <div class="sa-card">
+              <div class="sa-ring"><i></i><span>94</span></div>
+              <div class="sa-bars">
+                <small>외운 단어</small>
+                <div class="sa-bar"><i class="sa-fill-mint"></i></div>
+                <small>이번 회독</small>
+                <div class="sa-bar"><i class="sa-fill-blue"></i></div>
+              </div>
+            </div>
+            <div class="sa-card">
+              <div class="sa-shelf">
+                <div class="sa-book sa-done" style="border-left-color: var(--mint);"><i>✓</i><span>생물학</span></div>
+                <div class="sa-book sa-reading" style="border-left-color: var(--blue);"><b></b><i>▸</i><span>천문학</span></div>
+                <div class="sa-book" style="border-left-color: var(--lavender);"><i></i><span>물리학</span></div>
+                <div class="sa-book" style="border-left-color: var(--pink);"><i></i><span>인류학</span></div>
+              </div>
+              <div class="sa-grid">
+                <span class="sa-cell sa-c1">Ch.1</span>
+                <span class="sa-cell sa-c2">Ch.2</span>
+                <span class="sa-cell sa-c3">Ch.3</span>
+                <span class="sa-cell sa-cur">▶ Ch.4</span>
+                <span class="sa-cell">Ch.5</span>
+                <span class="sa-cell">Ch.6</span>
+                <span class="sa-cell">Ch.7</span>
+                <span class="sa-cell">Ch.8</span>
+                <span class="sa-cell">Ch.9</span>
+              </div>
+              <div class="sa-stats">오늘 4분 학습<b>🔥 연속 7일</b><em>2장만 더!</em></div>
+            </div>
+            <div class="sa-card sa-weak">
+              <span>모름 단어 <b>12</b>개</span>
+              <span class="sa-pill" style="background: var(--coral);">카드</span>
+              <span class="sa-pill" style="background: var(--pink);">퀴즈</span>
+            </div>
+            <div class="sa-cta">▶ 이어서 학습하기</div>
+          </div>
+        </div>
+        <p class="shot-cap">주제 책장으로 보는 학습 진도</p>
+      </div>
+      <div>
+        <div class="shot-frame">
+          <div class="shot-anim" aria-label="단어 카드 스와이프 애니메이션 미리보기">
+            <div class="sa-top">
+              <span class="sa-pill" style="background: var(--lavender);">천문학</span>
+              <span class="sa-count">4/10장, 알아요 3, 모름 1</span>
+            </div>
+            <div class="sa-stage">
+              <div class="sa-word sa-back"></div>
+              <div class="sa-word sa-cardB"><h4>eclipse</h4><p>일식, 월식</p><em>/ɪˈklɪps/</em><div class="sa-tint sa-tint-coral">✕ 모름</div></div>
+              <div class="sa-word sa-cardA"><h4>orbit</h4><p>궤도</p><em>/ˈɔːrbɪt/</em><div class="sa-tint sa-tint-mint">✓ 알아요</div></div>
+            </div>
+            <div class="sa-btns">
+              <span class="sa-btn sa-no">✕ 모름</span>
+              <span class="sa-btn sa-ok">✓ 알아요</span>
+            </div>
+          </div>
+        </div>
+        <p class="shot-cap">스와이프 회독 학습</p>
+      </div>
+      <div>
+        <div class="shot-frame">
+          <div class="shot-anim" aria-label="3초 퀴즈 애니메이션 미리보기">
+            <div class="sa-qbar"><i></i></div>
+            <div class="sa-qmeta"><span>7/12</span><span class="sa-pill" style="background: var(--yellow);">3초</span></div>
+            <div class="sa-qword"><small>이 단어의 뜻은?</small><h4>aesthetic</h4></div>
+            <div class="sa-opts">
+              <span class="sa-opt">실용적인</span>
+              <span class="sa-opt">불가피한</span>
+              <span class="sa-opt sa-correct">미적인<b>✓</b></span>
+              <span class="sa-opt">임시의</span>
+            </div>
+          </div>
+        </div>
+        <p class="shot-cap">모름 단어 3초 퀴즈</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= LIVE DEMO (3초 퀴즈 맛보기) ======================= -->
+<section id="demo" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>다운로드 전에, 직접 해보세요</h2>
+      <p>앱의 시그니처, 3초 룰 퀴즈. 3초 안에 못 고르면 모르는 겁니다.</p>
+    </div>
+    <div class="demo-card">
+      <div class="demo-timer" id="demoTimer"><i id="demoTimerFill"></i></div>
+      <div class="demo-meta"><span id="demoCount">6문제, 문제당 3초</span><span id="demoTag">토플 학술 어휘</span></div>
+      <div id="demoStage" class="demo-center">
+        <p style="color: var(--body); font-weight: 700; margin: 18px 0 22px;">여섯 단어, 문제당 3초.<br />앱과 똑같은 규칙으로 돌아갑니다.</p>
+        <button class="nb-btn" id="demoStart">퀴즈 시작</button>
+      </div>
+      <p class="demo-note" id="demoNote"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= STATEMENT BAND 2 ======================= -->
+<section class="cinema center" id="closing" aria-label="지금 시작">
+  <div class="cinema-art art-b" aria-hidden="true"></div>
+  <div class="scrim"></div>
+  <div class="cinema-inner">
+    <div class="cinema-copy">
+      <span class="kicker">하루 5분</span>
+      <h2>오늘 외운 한 단어가,<br /><span class="film-hl">120까지 남습니다.</span></h2>
+      <p>지하철에서, 카페에서, 자기 전에. 짧게 자주, 외울 때까지.</p>
+      <div class="cinema-ctas">
+        <a class="nb-btn" href="#pricing">가격 보기</a>
+        <a class="nb-btn secondary" href="#download">출시 소식 보기</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= PRICING ======================= -->
+<section id="pricing">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>필요한 만큼만. 원하면 평생.</h2>
+      <p>첫 주제 한 권은 무료. 그 다음은 연간이나 월간 구독, 또는 평생권 중 하나이고 셋 다 여는 범위는 같습니다.</p>
+    </div>
+    <div class="pricing">
+      <div class="price-card">
+        <h3>무료로 시작</h3>
+        <div class="price">₩0</div>
+        <ul>
+          <li>내 레벨 첫 주제 1권 전체 무료, 100단어 10챕터</li>
+          <li>회독, 모름 단어, 3초 퀴즈 전부 체험</li>
+          <li>오늘의 20문제와 레벨 테스트 무제한</li>
+          <li>로그인 없음, 광고 없음</li>
+        </ul>
+        <a class="nb-btn" href="#download" style="margin-top: 22px;">App Store 준비 중</a>
+      </div>
+      <div class="price-card hot">
+        <span class="sale-badge">연간 추천, 56% 절약</span>
+        <h3>일이공 Pro</h3>
+        <div class="price">₩29,000<span style="font-size:0.45em; font-weight:800;"> /년</span></div>
+        <div class="price-note">월 ₩2,417 꼴, 월간 ₩5,500, 평생권 ₩44,000</div>
+        <ul>
+          <li>4개 레벨 4,000단어 전 주제 전 챕터</li>
+          <li>무제한 회독, 모름 복습, 3초 퀴즈</li>
+          <li>구독은 언제든 해지, 남은 기간은 그대로 이용</li>
+          <li>평생권은 한 번 결제로 영구 소장</li>
+        </ul>
+        <a class="nb-btn secondary" href="#download" style="margin-top: 22px;">App Store 준비 중</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= FAQ ======================= -->
+<section class="alt">
+  <div class="wrap">
+    <div class="sec-head"><h2>자주 묻는 질문</h2></div>
+    <div class="faq">
+      <details>
+        <summary>토플 공식 앱인가요?</summary>
+        <p>아니요. 일이공(T120)은 ForgeLab이 독립적으로 개발한 학습 도구로, ETS와 아무런 제휴나 보증 관계가 없습니다. TOEFL®은 ETS의 등록 상표이며, 본 앱은 "시험 대비"라는 목적을 설명하기 위해서만 이름을 언급합니다. 모든 학습 콘텐츠는 자체 제작이며 실제 기출문제를 포함하지 않습니다.</p>
+      </details>
+      <details>
+        <summary>왜 권 번호가 아니라 주제인가요?</summary>
+        <p>토플 지문은 생물학, 천문학, 인류학처럼 학술 도메인별로 나옵니다. 같은 지문에서 만날 단어끼리 묶어 외우면 한 단어가 다른 단어를 끌어옵니다. 그래서 책장의 한 권을 한 주제로 만들었습니다. 한 권은 100단어이고 10단어씩 10챕터로 나뉩니다.</p>
+      </details>
+      <details>
+        <summary>로그인이나 회원가입이 필요한가요?</summary>
+        <p>아니요. 계정 없이 바로 시작합니다. 학습 기록은 사용자 본인의 iCloud에 저장되고, 구매는 Apple ID가 처리합니다. 개발자 서버에는 아무것도 저장되지 않습니다.</p>
+      </details>
+      <details>
+        <summary>기기를 바꾸거나 앱을 지웠다 깔면 기록이 사라지나요?</summary>
+        <p>사라지지 않습니다. 진도, 회독 수, 마스터 단어, 스트릭이 iCloud로 자동 백업되어 같은 Apple 계정이면 그대로 복원됩니다. 이용권도 "구매 복원" 한 번이면 됩니다.</p>
+      </details>
+      <details>
+        <summary>무료로는 어디까지 쓸 수 있나요?</summary>
+        <p>내 레벨의 <strong>첫 주제 한 권 전체(10챕터, 100단어)</strong>를 무료로 끝까지 학습할 수 있습니다. 회독, 모름 단어 복습, 3초 퀴즈, 오늘의 20문제, 레벨 테스트까지 모든 기능이 제한 없이 동작합니다. 두 번째 주제부터는 이용권이 필요하며 연간 ₩29,000, 월간 ₩5,500 구독 또는 평생권 ₩44,000 중 하나를 고르면 됩니다. 여는 범위는 셋 다 같습니다.</p>
+      </details>
+      <details>
+        <summary>구독인가요? 해지하면 어떻게 되나요?</summary>
+        <p>연간과 월간은 자동 갱신 구독이고, 평생권은 한 번만 결제합니다. 구독은 iOS 설정에서 Apple 계정, 구독 순서로 들어가 언제든 해지할 수 있고, 해지해도 이미 결제한 기간이 끝날 때까지는 그대로 이용됩니다. 무료 체험은 따로 없지만 첫 주제 100단어를 끝까지 무료로 써 보고 결정하면 됩니다.</p>
+      </details>
+      <details>
+        <summary>환불은 어떻게 하나요?</summary>
+        <p>Apple App Store 환불 정책을 따릅니다. <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>에서 요청할 수 있습니다.</p>
+      </details>
+      <details>
+        <summary>오프라인에서도 쓸 수 있나요?</summary>
+        <p>네. 콘텐츠는 기기에 캐시되므로 한 번 다운로드된 이후에는 오프라인에서도 학습할 수 있습니다.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= FOOTER ======================= -->
+<footer>
+  <div class="wrap">
+    <span style="font-weight: 900;">T120 일이공</span>
+    <a href="privacy.html">개인정보 처리방침</a>
+    <a href="terms.html">이용약관</a>
+    <a class="contact-btn" href="mailto:forgelab.aitech@gmail.com?subject=%5BT120%5D%20%EB%AC%B8%EC%9D%98">✉️ 문의하기</a>
+    <span style="margin-left:auto;">© 2026 ForgeLab</span>
+    <span class="biz">ForgeLab, 대표 Jason Lee</span>
+    <span class="ets">TOEFL®은 ETS(Educational Testing Service)의 등록 상표입니다. 본 앱과 사이트는 시험 대비라는 목적을 설명하기 위해서만 상표를 언급하며, ETS와 무관하고 ETS의 제휴나 보증, 승인을 받지 않았습니다. TOEFL® is a registered trademark of ETS. This product is neither affiliated with, nor endorsed or approved by ETS; the mark is used solely to describe the product's purpose.</span>
+  </div>
+</footer>
+
+<script>
+/* ---------- Scroll spy: highlight the nav link of the section in view ---------- */
+(function () {
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav-links a[href^="#"]'));
+  var byId = {};
+  links.forEach(function (a) { byId[a.getAttribute('href').slice(1)] = a; });
+
+  var targets = Object.keys(byId)
+    .map(function (id) { return document.getElementById(id); })
+    .filter(Boolean);
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) return;
+      links.forEach(function (a) { a.classList.remove('active'); });
+      var link = byId[entry.target.id];
+      if (link) link.classList.add('active');
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+
+  targets.forEach(function (t) { observer.observe(t); });
+})();
+
+/* ---------- Scroll reveals: tag groups, animate them in on enter ---------- */
+(function () {
+  if (!('IntersectionObserver' in window)) return;
+
+  // Assign reveal variant + stagger index without touching the HTML.
+  function tag(sel, variant, perRow) {
+    var els = Array.prototype.slice.call(document.querySelectorAll(sel));
+    els.forEach(function (el, i) {
+      el.classList.add('reveal');
+      var v = typeof variant === 'function' ? variant(i) : variant;
+      el.classList.add(v);
+      el.style.setProperty('--i', perRow ? (i % perRow) : i);
+    });
+    return els;
+  }
+
+  var groups = [].concat(
+    tag('.sec-head', 'r-up'),
+    tag('.step', 'r-up', 4),
+    // features deal in from alternating sides, like a hand of cards
+    tag('.feature', function (i) { return i % 2 ? 'r-right' : 'r-left'; }, 3),
+    tag('.topic', 'r-up', 5),
+    tag('.level', 'r-up', 4),
+    tag('.shots > div', 'r-up', 3),
+    tag('.price-card', 'r-up', 2),
+    tag('.faq details', 'r-up', 1)
+  );
+
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { rootMargin: '0px 0px -12% 0px', threshold: 0.15 });
+
+  groups.forEach(function (el) { io.observe(el); });
+})();
+
+/* ---------- Signature: scroll-linked card fan ---------- */
+(function () {
+  var section = document.getElementById('story');
+  var deck = document.getElementById('fanDeck');
+  if (!section || !deck) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  var ticking = false;
+  function update() {
+    ticking = false;
+    var rect = section.getBoundingClientRect();
+    var vh = window.innerHeight;
+    // 0 while the sticky stage first pins, 1 as the track scrolls past.
+    var travel = rect.height - vh;
+    var p = travel > 0 ? (-rect.top) / travel : 0;
+    p = Math.max(0, Math.min(1, p));
+    // ease so the spread feels like it "settles" open
+    var eased = 1 - Math.pow(1 - p, 2);
+    deck.style.setProperty('--p', eased.toFixed(4));
+  }
+  function onScroll() {
+    if (!ticking) { ticking = true; requestAnimationFrame(update); }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  update();
+})();
+
+/* ---------- 3초 퀴즈 맛보기 (앱의 WordQuizView와 같은 규칙) ---------- */
+(function () {
+  var QUESTIONS = [
+    { w: 'photosynthesis', o: ['광합성', '퇴적', '은유', '친족'], a: 0 },
+    { w: 'momentum',       o: ['균형', '운동량', '밀도', '굴절'], a: 1 },
+    { w: 'sediment',       o: ['화석', '대기', '퇴적물', '성운'], a: 2 },
+    { w: 'kinship',        o: ['이주', '친족 관계', '계층', '의례'], a: 1 },
+    { w: 'aesthetic',      o: ['상징적인', '실용적인', '미적인', '고전적인'], a: 2 },
+    { w: 'metaphor',       o: ['은유', '운율', '서사', '풍자'], a: 0 }
+  ];
+  var LIMIT = 3000, REVEAL = 900;
+
+  var stage = document.getElementById('demoStage');
+  var timer = document.getElementById('demoTimer');
+  var fill = document.getElementById('demoTimerFill');
+  var count = document.getElementById('demoCount');
+  var note = document.getElementById('demoNote');
+  var idx = 0, score = 0, timers = [];
+
+  document.getElementById('demoStart').addEventListener('click', start);
+
+  function clearTimers() { timers.forEach(clearTimeout); timers = []; }
+
+  function start() {
+    idx = 0; score = 0;
+    note.textContent = '';
+    show();
+  }
+
+  function resetBar() {
+    timer.classList.remove('warn', 'hot');
+    fill.style.transition = 'none';
+    fill.style.width = '100%';
+    void fill.offsetWidth; /* reflow, restarts the transition */
+    fill.style.transition = 'width ' + LIMIT + 'ms linear';
+    fill.style.width = '0%';
+  }
+
+  function show() {
+    clearTimers();
+    var q = QUESTIONS[idx];
+    count.textContent = (idx + 1) + ' / ' + QUESTIONS.length;
+    note.textContent = '';
+    stage.classList.remove('demo-center');
+    stage.innerHTML = '<div class="demo-word">' + q.w + '</div>' +
+      q.o.map(function (opt, i) {
+        return '<button class="demo-opt" data-i="' + i + '">' + opt + '</button>';
+      }).join('');
+    stage.querySelectorAll('.demo-opt').forEach(function (btn) {
+      btn.addEventListener('click', function () { answer(parseInt(btn.dataset.i, 10)); });
+    });
+    resetBar();
+    timers.push(setTimeout(function () { timer.classList.add('warn'); }, LIMIT / 3));
+    timers.push(setTimeout(function () { timer.classList.add('hot'); }, LIMIT * 2 / 3));
+    timers.push(setTimeout(timeUp, LIMIT));
+  }
+
+  function freezeBar() {
+    var w = getComputedStyle(fill).width;
+    fill.style.transition = 'none';
+    fill.style.width = w;
+  }
+
+  function reveal(picked) {
+    clearTimers();
+    freezeBar();
+    var q = QUESTIONS[idx];
+    stage.querySelectorAll('.demo-opt').forEach(function (btn, i) {
+      btn.disabled = true;
+      if (i === q.a) btn.classList.add('correct');
+      else if (i === picked) btn.classList.add('wrong');
+    });
+  }
+
+  function answer(i) {
+    var q = QUESTIONS[idx];
+    reveal(i);
+    if (i === q.a) { score++; note.textContent = '정답! 앱에서는 "알아요"로 기록됩니다.'; }
+    else { note.textContent = '오답. 앱에서는 모름 단어로 남아 다시 만나게 됩니다.'; }
+    timers.push(setTimeout(next, REVEAL));
+  }
+
+  function timeUp() {
+    reveal(-1);
+    note.textContent = '⏰ 시간 초과! 3초 안에 못 고르면 모르는 겁니다.';
+    timers.push(setTimeout(next, REVEAL + 200));
+  }
+
+  function next() {
+    idx++;
+    if (idx < QUESTIONS.length) { show(); return; }
+    finish();
+  }
+
+  function finish() {
+    clearTimers();
+    fill.style.transition = 'none';
+    fill.style.width = '100%';
+    timer.classList.remove('warn', 'hot');
+    count.textContent = '완료';
+    stage.classList.add('demo-center');
+    var msg = score === QUESTIONS.length
+      ? '완벽해요. 고급 레벨에서 기다릴게요.'
+      : '틀린 ' + (QUESTIONS.length - score) + '개, 앱에서는 외울 때까지 다시 만납니다.';
+    stage.innerHTML =
+      '<div class="demo-score">' + score + ' / ' + QUESTIONS.length + '</div>' +
+      '<p style="color: var(--body); font-weight: 700; margin-bottom: 20px;">' + msg + '</p>' +
+      '<div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">' +
+        '<button class="nb-btn" id="demoRetry">다시 도전</button>' +
+        '<a class="nb-btn mint" href="#topics">주제 책장 보기</a>' +
+      '</div>';
+    note.textContent = '';
+    document.getElementById('demoRetry').addEventListener('click', start);
+  }
+})();
+</script>
+
+</body>
+</html>
