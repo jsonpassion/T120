@@ -1,4 +1,4 @@
-# T120 이용약관 / Terms of Service
+# One20 이용약관 / Terms of Service
 
 **시행일:** 2026년 9월 10일
 **Effective Date:** September 10, 2026
@@ -54,7 +54,7 @@
 
 - 사업자: ForgeLab (대표 Jason Lee)
 
-- 문의: [이메일 보내기](mailto:forgelab.aitech@gmail.com?subject=%5BT120%5D%20%EC%9D%B4%EC%9A%A9%EC%95%BD%EA%B4%80%20%EB%AC%B8%EC%9D%98)
+- 문의: [이메일 보내기](mailto:forgelab.aitech@gmail.com?subject=%5BOne20%5D%20%EC%9D%B4%EC%9A%A9%EC%95%BD%EA%B4%80%20%EB%AC%B8%EC%9D%98)
 
 ---
 
@@ -62,7 +62,7 @@
 
 ### 1. Service Overview
 
-T120 ("the App") is an independently developed iOS application that helps users study English vocabulary in preparation for the TOEFL® test. The App is not affiliated with ETS. The App provides study content organized by level (score band), and there are four levels: 0-60, 61-80, 81-100 and 101-120. Within each level the words are grouped into subject books such as Biology, Astronomy and Physics; the first subject book is free, and the remaining subject books can be unlocked through an in-app purchase (a pass).
+One20 ("the App") is an independently developed iOS application that helps users study English vocabulary in preparation for the TOEFL® test. The App is not affiliated with ETS. The App provides study content organized by level (score band), and there are four levels: 0-60, 61-80, 81-100 and 101-120. Within each level the words are grouped into subject books such as Biology, Astronomy and Physics; the first subject book is free, and the remaining subject books can be unlocked through an in-app purchase (a pass).
 
 ### 2. Free Tier and In-App Purchases
 
@@ -107,4 +107,4 @@ These Terms are governed by the laws of the Republic of Korea. If a dispute aris
 
 - Operator: ForgeLab (Representative: Jason Lee)
 
-- Contact: [Send us an email](mailto:forgelab.aitech@gmail.com?subject=%5BT120%5D%20Terms%20inquiry)
+- Contact: [Send us an email](mailto:forgelab.aitech@gmail.com?subject=%5BOne20%5D%20Terms%20inquiry)

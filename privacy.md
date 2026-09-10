@@ -1,4 +1,4 @@
-# 일이공 (T120) 개인정보 처리방침 / Privacy Policy
+# 일이공 (One20) 개인정보 처리방침 / Privacy Policy
 
 **최종 수정일 및 시행일:** 2026년 9월 10일
 **Last Updated / Effective:** September 10, 2026
@@ -9,7 +9,7 @@
 
 ### 1. 개요
 
-이 방침은 ForgeLab(대표 Jason Lee, 이하 "개발자")이 배포하는 iOS 앱 일이공(영문명 T120, 이하 "앱")에 적용됩니다. 개발자는 「개인정보 보호법」 등 관련 법령을 지키며, 이 방침에서 앱이 어떤 정보를 다루고 어떻게 처리하는지 설명합니다. 이 방침에서 정하지 않은 사항은 이용약관과 관련 법령을 따릅니다.
+이 방침은 ForgeLab(대표 Jason Lee, 이하 "개발자")이 배포하는 iOS 앱 일이공(영문명 One20, VOCA for TOEFL®, 이하 "앱")에 적용됩니다. 개발자는 「개인정보 보호법」 등 관련 법령을 지키며, 이 방침에서 앱이 어떤 정보를 다루고 어떻게 처리하는지 설명합니다. 이 방침에서 정하지 않은 사항은 이용약관과 관련 법령을 따릅니다.
 
 ### 2. 개인정보를 수집하지 않습니다
 
@@ -79,7 +79,7 @@ Apple(iCloud, App Store)과 GitHub의 서버는 국외에 있을 수 있습니�
 - 사업자: ForgeLab (대표 Jason Lee)
 - 개인정보 보호책임자: Jason Lee
 
-- 문의: [이메일로 문의하기](mailto:forgelab.aitech@gmail.com?subject=%5BT120%5D%20%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%20%EB%AC%B8%EC%9D%98)
+- 문의: [이메일로 문의하기](mailto:forgelab.aitech@gmail.com?subject=%5BOne20%5D%20%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%20%EB%AC%B8%EC%9D%98)
 
 ### 13. 방침의 변경
 
@@ -95,7 +95,7 @@ Apple(iCloud, App Store)과 GitHub의 서버는 국외에 있을 수 있습니�
 
 ### 1. Overview
 
-This policy applies to the iOS app T120 (Korean name 일이공, "the App"), published by ForgeLab (representative: Jason Lee, "the Developer"). The Developer complies with applicable privacy laws, including the Personal Information Protection Act of Korea, and this policy explains what information the App handles and how. Matters not covered here follow the Terms of Service and applicable law.
+This policy applies to the iOS app One20 (VOCA for TOEFL®; Korean name 일이공, "the App"), published by ForgeLab (representative: Jason Lee, "the Developer"). The Developer complies with applicable privacy laws, including the Personal Information Protection Act of Korea, and this policy explains what information the App handles and how. Matters not covered here follow the Terms of Service and applicable law.
 
 ### 2. We do not collect personal information
 
@@ -165,7 +165,7 @@ Servers operated by Apple (iCloud, App Store) and GitHub may be located outside 
 - Operator: ForgeLab (Representative: Jason Lee)
 - Privacy officer: Jason Lee
 
-- Contact: [Contact us by email](mailto:forgelab.aitech@gmail.com?subject=%5BT120%5D%20Privacy%20inquiry)
+- Contact: [Contact us by email](mailto:forgelab.aitech@gmail.com?subject=%5BOne20%5D%20Privacy%20inquiry)
 
 ### 13. Changes to this policy
 
