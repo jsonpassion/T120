@@ -1,6 +1,6 @@
 {
-  "version": "c-2c7be6425cbb",
-  "generated_at": "2026-07-14T03:13:42Z",
+  "version": "c-7365afd4b31f",
+  "generated_at": "2026-09-10T06:32:18Z",
   "schema_version": 1,
   "track": "toefl-120",
   "profile": {
@@ -49,12 +49,14 @@
       "type": "voca",
       "level": 4,
       "path": "content/voca/score-101-120/unit-001.md",
-      "checksum_sha256": "91522d7230b819325ae3e4099a01c06854b85fe5fa973554c7b0e55fa84604f4",
+      "checksum_sha256": "55b5ef482efcdbec55cccdc4f790911f13d5ab727421c2d5476913e3f5988f6b",
       "updated_at": "2026-07-14T00:00:00Z",
       "score_band_id": "score-101-120",
       "score_min": 101,
       "score_max": 120,
       "unit_title": "Biology",
+      "unit_title_ko": "생물학",
+      "unit_symbol": "leaf",
       "sequence": 1
     }
   ]

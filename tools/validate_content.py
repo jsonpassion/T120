@@ -19,7 +19,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 CONTENT_DIR = ROOT / "content"
 
-REQUIRED_FM = ["id", "type", "level", "difficulty", "tags", "source", "version", "updated_at", "unit_title"]
+REQUIRED_FM = ["id", "type", "level", "difficulty", "tags", "source", "version", "updated_at", "unit_title", "unit_title_ko", "unit_symbol"]
 
 BAND_RANGES = {
     "score-000-060": (0, 60),

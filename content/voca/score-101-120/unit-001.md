@@ -11,6 +11,8 @@ score_band_id: score-101-120
 score_min: 101
 score_max: 120
 unit_title: Biology
+unit_title_ko: 생물학
+unit_symbol: leaf
 ---
 
 # 고급 1권 — Biology (생물학) — SAMPLE (형식 시연용 10단어; 실제 유닛은 정확히 100단어)

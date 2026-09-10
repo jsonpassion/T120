@@ -58,6 +58,8 @@
 - band_id: {{BAND_ID}}            (예: score-081-100)
 - unit 번호: {{UNIT_NUMBER}}       (예: 003 → 파일명 unit-003.md, id 접미사 u003)
 - unit_title: {{UNIT_TITLE}}       (예: Astronomy)
+- unit_title_ko: {{UNIT_TITLE_KO}} (예: 천문학 — 앱 책장의 책 제목, 2~4글자 학문명)
+- unit_symbol: {{UNIT_SYMBOL}}     (예: moon.stars — 책장 아이콘, iOS 18 SF Symbol 이름)
 - 테마: {{THEME_KO}}               (예: 천문학 — 행성·항성·우주 탐사)
 
 [파일 규격 — 그대로 따를 것]

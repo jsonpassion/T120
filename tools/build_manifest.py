@@ -79,6 +79,8 @@ def build_entries() -> list:
             "score_min": int(fm["score_min"]) if fm.get("score_min") else None,
             "score_max": int(fm["score_max"]) if fm.get("score_max") else None,
             "unit_title": fm.get("unit_title"),
+            "unit_title_ko": fm.get("unit_title_ko"),
+            "unit_symbol": fm.get("unit_symbol"),
             "sequence": sequence,
         })
     return entries

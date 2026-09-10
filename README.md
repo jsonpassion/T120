@@ -29,8 +29,14 @@ PROMPT.md                         ← LLM으로 커리큘럼·유닛을 생성�
 ## NINE90 형식과의 차이 — `unit_title`
 
 TOEIC 트랙은 권을 번호("N권")로 부르지만, TOEFL 트랙은 **도메인 제목의 책장**을 씁니다.
-frontmatter에 `unit_title`(영문 도메인명, 예: `Biology`, `Campus Life`)이 **필수**이며,
-앱 책장의 책 커버에 이 제목이 표시됩니다. manifest에도 `unit_title`로 포함됩니다.
+frontmatter에 `unit_title`(영문 도메인명, 예: `Biology`, `Campus Life`), `unit_title_ko`(한글 학문명, 예: `생물학`),
+`unit_symbol`(iOS 18에 있는 SF Symbol 이름, 예: `leaf`)이 **필수**입니다. 앱 책장은 권 번호 대신
+`unit_title_ko`를 책 제목으로, 책 아이콘 대신 `unit_symbol`을 표시합니다(없거나 OS가 모르는 이름이면 책 아이콘으로 대체).
+manifest에도 세 값이 그대로 포함됩니다.
+
+권장 심볼: 생물학 `leaf` · 천문학 `moon.stars` · 지질학 `mountain.2` · 화학 `flask` · 물리학 `atom` ·
+심리학 `brain.head.profile` · 경제학 `chart.line.uptrend.xyaxis` · 인류학 `globe.americas` · 역사 `building.columns` ·
+예술 `paintpalette` · 문학 `text.book.closed` · 언어학 `character.book.closed` · 캠퍼스 생활 `graduationcap` · 학술 동사 `textformat`
 그 외 단어 줄 형식은 NINE90 v2와 동일합니다:
 
 ```
