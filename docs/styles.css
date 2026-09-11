@@ -165,6 +165,7 @@ body {
   border: var(--bw) solid var(--ink);
   border-radius: 12px;
   font-size: 30px;
+  line-height: 1;
   font-weight: 900;
   color: var(--ink);
   box-shadow: 4px 4px 0 var(--ink);
@@ -1076,6 +1077,30 @@ html.js .reveal.in      { opacity: 1; transform: none; }
    layered brand gradients plus a shelf-of-spines stripe pattern.
    ============================================================ */
 
+/* ---------- Hero film reel (onboarding footage, muted loop) ---------- */
+.reel {
+  width: 230px;
+  aspect-ratio: 9 / 16;
+  flex: none;
+  border: var(--bw) solid var(--ink);
+  border-radius: 24px;
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  background: var(--ink);
+  rotate: -7deg;
+  translate: 0 26px;
+  margin-right: -20px;   /* just the edges touch — the film stays watchable */
+  z-index: 0;
+  transition: rotate 0.25s ease, translate 0.25s ease;
+}
+.reel:hover { rotate: -2deg; translate: 0 18px; }
+.reel video { width: 100%; height: 100%; object-fit: cover; display: block; }
+@media (prefers-reduced-motion: reduce) {
+  .reel { rotate: -7deg; translate: 0 26px; }
+  .reel:hover { rotate: -7deg; translate: 0 26px; }
+}
+@media (max-width: 900px) { .reel { display: none; } }
+
 .cinema {
   position: relative;
   min-height: 62vh;
@@ -1085,6 +1110,15 @@ html.js .reveal.in      { opacity: 1; transform: none; }
   border-top: var(--bw) solid var(--ink);
   border-bottom: var(--bw) solid var(--ink);
   padding: 0;
+}
+.cinema video {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .cinema video { display: none; }         /* poster only, no autoplay */
 }
 .cinema .cinema-art {
   position: absolute; inset: 0; z-index: 0;

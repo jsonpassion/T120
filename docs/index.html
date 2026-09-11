@@ -71,6 +71,12 @@
   <!-- CSS-drawn app preview (출시 스크린샷 교체 전 임시 목업) -->
   <div class="hero-visual" data-reveal="zoom">
   <div class="glow" aria-hidden="true"></div>
+  <div class="reel" aria-hidden="false">
+    <video autoplay muted loop playsinline preload="metadata" poster="assets/video/onboarding-smile.jpg"
+           aria-label="오늘 외운 한 단어가 120까지 남는다는 온보딩 영상">
+      <source src="assets/video/onboarding-smile.mp4" type="video/mp4" />
+    </video>
+  </div>
   <div class="phone" aria-hidden="true">
     <div class="notch"></div>
     <div class="mock-row score">
@@ -98,7 +104,9 @@
 
 <!-- ======================= STATEMENT BAND 1 ======================= -->
 <section class="cinema" id="film" aria-label="주제별 학술 어휘">
-  <div class="cinema-art" aria-hidden="true"></div>
+  <video autoplay muted loop playsinline preload="metadata" poster="assets/video/hero-fan.jpg">
+    <source src="assets/video/hero-fan.mp4" type="video/mp4" />
+  </video>
   <div class="scrim"></div>
   <div class="cinema-inner">
     <div class="cinema-copy">
@@ -632,6 +640,23 @@
   }, { rootMargin: '0px 0px -12% 0px', threshold: 0.15 });
 
   groups.forEach(function (el) { io.observe(el); });
+})();
+
+/* ---------- Play the film only while it is on screen ---------- */
+(function () {
+  var vids = Array.prototype.slice.call(document.querySelectorAll('.cinema video, .reel video'));
+  if (!vids.length) return;
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) { vids.forEach(function (v) { v.pause(); v.removeAttribute('autoplay'); }); return; }
+  if (!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      var v = e.target;
+      if (e.isIntersecting) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+      else { v.pause(); }
+    });
+  }, { threshold: 0.2 });
+  vids.forEach(function (v) { io.observe(v); });
 })();
 
 /* ---------- Signature: scroll-linked card fan ---------- */
