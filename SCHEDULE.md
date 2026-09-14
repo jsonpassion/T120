@@ -1,7 +1,7 @@
 # schedule.json — 공식 시험 일정
 
 앱의 **시험 일정** 시트(대시보드 D-day 칩 · 설정 › 학습 설정 › 시험일)가 읽는 파일이다.
-리포 루트의 `schedule.json`을 앱이 `manifest` 옆 raw URL에서 받는다
+리포 루트의 `schedule.json`을 앱이 raw URL에서 받는다 (단어는 앱에 내장 — 이 공개 리포에는 `levels.json` 밴드 id 목록만)
 (`https://raw.githubusercontent.com/jsonpassion/<Repo>/main/schedule.json`). **main 에 push = 배포**.
 
 - 앱 리더: `NINE90/Models/ExamSchedule.swift` (+ `ExamScheduleStore.swift`, `ExamScheduleView.swift`)

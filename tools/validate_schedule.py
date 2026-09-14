@@ -11,7 +11,7 @@ Errors (must be 0 before pushing):
 - regions: unique ids, localized names, ISO country codes, at most one "default"
 - sessions: unique ids per region, localized titles, examDate; registration windows with
   start <= end and closing no later than the exam; resultDate after the exam
-- levels only name band ids that exist in content/ (content/voca/<band> or content/<lang>/voca/<band>)
+- levels only name band ids that exist in content/ (content/voca/<band> or content/<lang>/voca/<band>), or in levels.json
 - selfScheduled tests carry no sessions
 
 Warnings: sittings on or before today (the app already ignores them — prune them), regions
@@ -219,6 +219,9 @@ def band_ids():
     ids = set()
     for voca in list(ROOT.glob("content/voca")) + list(ROOT.glob("content/*/voca")):
         ids.update(p.name for p in voca.iterdir() if p.is_dir())
+    # Public site repos no longer carry the words (they ship inside the app): levels.json lists the band ids.
+    if not ids and (ROOT / "levels.json").exists():
+        ids.update(json.loads((ROOT / "levels.json").read_text()))
     return ids
 
 
