@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "exam": "TOEFL iBT",
+  "updatedAt": "2026-09-14",
+  "officialURL": "https://www.ets.org/toefl.html",
+  "selfScheduled": true,
+  "regions": [
+    {
+      "id": "GLOBAL",
+      "name": {
+        "ko": "전 세계",
+        "en": "Worldwide",
+        "ja": "全世界",
+        "zh": "全球",
+        "vi": "Toàn cầu"
+      },
+      "countries": [],
+      "default": true,
+      "officialURL": "https://www.ets.org/toefl.html",
+      "sessions": []
+    }
+  ]
+}
